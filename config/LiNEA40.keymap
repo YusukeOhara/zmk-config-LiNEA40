@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -136,10 +136,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &msc MOVE_Y(0)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB3        &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans          &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans          &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &mkp MCLK  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB3   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
@@ -173,10 +173,10 @@
 
         CURSOR {
             bindings = <
-&kp LG(LA(K))  &kp LG(LA(P))  &kp F5   &kp F4          &kp F2                                       &kp LG(UP)        &kp LC(TAB)  &kp UP    &kp LA(F4)  &kp DEL
-&trans         &kp LS(LG(H))  &kp F11  &kp LG(LS(F9))  &kp F7                                       &kp LS(LG(LEFT))  &kp LEFT     &kp DOWN  &kp RIGHT   &mkp MB4
-&trans         &trans         &trans   &trans          &kp F8                                       &kp LC(Z)         &kp LG(TAB)  &trans    &trans      &mkp MB5
-&trans         &trans         &trans   &trans          &kp LC(KP_MINUS)  &kp RC(KP_PLUS)    &trans  &trans                         &trans    &trans      &trans
+&kp LG(LA(K))  &kp LG(LA(P))  &kp F5   &kp F4          &kp F2                                       &kp LG(UP)        &kp LC(TAB)  &kp UP              &kp LA(F4)  &kp DEL
+&trans         &kp LS(LG(H))  &kp F11  &kp LG(LS(F9))  &kp F7                                       &kp LS(LG(LEFT))  &kp LEFT     &kp DOWN            &kp RIGHT   &mkp MB4
+&trans         &trans         &trans   &trans          &kp F8                                       &kp LC(Z)         &kp LG(TAB)  &kp LG(DOWN_ARROW)  &trans      &mkp MB5
+&trans         &trans         &trans   &trans          &kp LC(KP_MINUS)  &kp RC(KP_PLUS)    &trans  &trans                         &trans              &trans      &trans
             >;
 
             sensor-bindings = <&re_kp LC(KP_MINUS) LC(KP_PLUS)>;
