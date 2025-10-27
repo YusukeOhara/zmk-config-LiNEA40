@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -149,10 +149,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET      &kp AMPERSAND  &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LBKT
-&kp SLASH        &trans  &trans    &kp APOS    &kp SEMICOLON                    &kp LS(EQUAL)  &kp LS(LBKT)   &kp RIGHT_BRACKET      &kp BACKSLASH         &kp LS(INTERNATIONAL_1)
-&trans           &trans  &trans    &kp APOS    &kp SEMICOLON                    &kp KP_EQUAL   &kp INT3       &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)     &kp EQUAL
-&trans           &trans  &trans    &trans      &trans         &trans    &trans  &trans                        &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LG(L)
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                                &kp CARET      &kp AMPERSAND  &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LBKT
+&kp SLASH        &trans  &trans    &kp APOS    &kp SEMICOLON                              &kp LS(EQUAL)  &kp LS(LBKT)   &kp RIGHT_BRACKET      &kp BACKSLASH         &kp LS(INTERNATIONAL_1)
+&trans           &trans  &trans    &kp APOS    &kp SEMICOLON                              &kp KP_EQUAL   &kp INT3       &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)     &kp EQUAL
+&trans           &trans  &trans    &trans      &trans         &kp INT_MUHENKAN    &trans  &trans                        &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LG(L)
             >;
 
             sensor-bindings = <&re_kp C_VOL_DN C_VOLUME_UP>;
