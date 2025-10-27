@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -155,17 +155,17 @@
 &trans                      &trans           &trans           &trans         &trans         &trans    &trans  &trans                       &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
             >;
 
-            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&re_kp LC(DOWN) LC(UP)>;
         };
 
         //3
 
         NUMBER_MARK {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &kp AT_SIGN      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS
-&trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                         &kp DOT       &kp ENTER     &kp QUESTION
+&trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT_ARROW)  &trans                    &kp AT_SIGN      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
+&trans    &kp LEFT_ARROW      &kp DOWN      &kp RIGHT_ARROW      &trans                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
+&kp HOME  &kp PAGE_DOWN       &kp END       &kp PAGE_UP          &trans                    &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS
+&trans    &trans              &trans        &trans               &trans  &trans    &trans  &trans                         &kp DOT       &kp ENTER     &kp QUESTION
             >;
         };
 
@@ -173,13 +173,13 @@
 
         CURSOR {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &kp LG(UP)        &kp LC(TAB)  &kp UP    &kp LA(F4)  &kp DEL
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &kp LS(LG(LEFT))  &kp LEFT     &kp DOWN  &kp RIGHT   &mkp MB4
-&trans  &trans  &trans  &kp F11  &kp F12                    &kp LC(C_MUTE)    &kp LG(TAB)  &trans    &trans      &mkp MB5
-&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                         &trans    &trans      &trans
+&kp LG(LA(K))  &kp LG(LA(P))  &kp F5   &kp F4          &kp F2                                 &kp LG(UP)        &kp LC(TAB)  &kp UP    &kp LA(F4)  &kp DEL
+&trans         &kp LS(LG(H))  &kp F11  &kp LG(LS(F9))  &kp F7                                 &kp LS(LG(LEFT))  &kp LEFT     &kp DOWN  &kp RIGHT   &mkp MB4
+&trans         &trans         &trans   &trans          &kp F8                                 &kp LC(Z)         &kp LG(TAB)  &trans    &trans      &mkp MB5
+&trans         &trans         &trans   &trans          &kp LC(MINUS)  &kp LC(PLUS)    &trans  &trans                         &trans    &trans      &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         //5
