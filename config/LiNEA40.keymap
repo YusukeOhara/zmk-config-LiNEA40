@@ -130,7 +130,7 @@
             #binding-cells = <0>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&td_henkan_muhenkan>, <&mo CURSOR>;
+            bindings = <&td_henkan_muhenkan &mo CURSOR>;
         };
 
     };
