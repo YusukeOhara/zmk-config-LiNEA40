@@ -121,7 +121,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mt C HENKAN>, <&kp MUHENKAN>;
+            bindings = <&mt A B>, <&kp C>;
         };
     };
 
