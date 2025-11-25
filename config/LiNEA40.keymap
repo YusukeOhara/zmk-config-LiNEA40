@@ -117,11 +117,11 @@
             tap-ms = <20>;
         };
 
-        td_lt: tap_dance_layer_tap {
+        td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&lt 3 HENKAN>, <&kp MUHENKAN>;
+            bindings = <&mt C HENKAN>, <&kp MUHENKAN>;
         };
     };
 
