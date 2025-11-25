@@ -117,13 +117,13 @@
             tap-ms = <20>;
         };
 
-        td_henkan_muhenkan: tap_dance {
+        td_henkan_muhen_layer3: td_henkan_muhen_layer3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN>, <&kp INT_MUHENKAN>;
-
             tapping-term-ms = <400>;
+            bindings = <&lt 3 HENKAN>, <&kp MUHENKAN>;
         };
+
     };
 
     keymap {
