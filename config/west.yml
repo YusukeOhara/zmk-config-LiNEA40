@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/kay-yokoyama
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: kloir-z
+      url-base: https://github.com/kloir-z
   projects:
     - name: zmk
       remote: zmkfirmware
