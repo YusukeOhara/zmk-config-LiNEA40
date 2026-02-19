@@ -124,7 +124,7 @@
         td_lt: tap_dance_layer_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&lt 3 INT_HENKAN>, <&kp INT_MUHENKAN>;
         };
     };
