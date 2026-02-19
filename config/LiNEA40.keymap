@@ -33,6 +33,10 @@
     acceleration-exponent = <0>;
 };
 
+&lt {
+    tapping-term-ms = <100>;
+};
+
 / {
     input_processors {
         zip_wheel_scaler: zip_wheel_scaler {
