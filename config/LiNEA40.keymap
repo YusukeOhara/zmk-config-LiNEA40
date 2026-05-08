@@ -33,7 +33,7 @@
     acceleration-exponent = <0>;
 };
 
-&lt { tapping-term-ms = <150>; };
+&lt { tapping-term-ms = <100>; };
 
 / {
     input_processors {
@@ -50,7 +50,7 @@
 &msc_input_listener {
     speed_up {
         layers = <FUNCTION>;
-        input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
+        input-processors = <&zip_wheel_scaler 2 1>; //スクロールを3倍速にする
     };
 };
 
@@ -122,7 +122,7 @@
         td_lt: tap_dance_layer_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&lt 3 INT_HENKAN>, <&kp INT_MUHENKAN>;
         };
     };
