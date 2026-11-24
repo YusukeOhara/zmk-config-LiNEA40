@@ -99,3 +99,12 @@
         status = "disabled";
     };
 };
+
+&gpio0 {
+    fast-charge-hog {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "fast-charge";
+    };
+};
